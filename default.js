@@ -7,7 +7,7 @@
       console.log(__dirname);
 
       document.getElementById("js-new-message").addEventListener("click", function (e) {
-        var composeWindow = new BrowserWindow({width: 800, height: 600});
+        var composeWindow = new BrowserWindow({width: 400, height: 400});
         composeWindow.loadURL('file://' + __dirname + '/compose.html');
         composeWindow.show();
       });
