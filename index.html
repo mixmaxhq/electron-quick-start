@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html style="height:100%;">
   <head>
     <title>Hello World!</title>
     <script src="default.js"></script>
   </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-    <a href="#" id="js-new-message">Compose</a>
+  <body style="margin:0;padding:0;height:100%;">
+    <webview id="composeview" src="http://app-local.mixmax.com/dashboard/live?user=chanpory%40mixmax.com" style="display:inline-block; width:100%; height:100%;" autosize="on" allowpopups></webview>
   </body>
 </html>
+
